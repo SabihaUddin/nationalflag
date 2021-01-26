@@ -1,0 +1,114 @@
+body{
+	margin:0;
+	padding:0;
+	font-family:tahoma;
+}
+.main-menu{
+	background:#78e08f;
+}
+.main-menu ul{
+	margin:0;
+	list-style: none;
+	padding:0;
+	
+	
+}
+.main-menu ul li{
+	float:left;
+	position:relative;
+}
+.main-menu ul:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+	
+.main-menu ul li a{
+	color:#000;
+	font-size:20px;
+	text-decoration:none;
+	padding: 10px 20px;
+	display:block;
+}
+.main-menu ul li a:hover{
+	background:#eb2f06;
+}
+.main-menu ul ul li{
+	float:none;
+}
+.main-menu ul ul{
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#b8e994;
+	width:300px;
+	display:none;
+}
+.main-menu ul li:hover >ul{
+	display:block;
+}
+	
+.main-menu ul ul ul{
+	background:#38ada9;
+	left:100%;
+	top:0;
+	position:absolute;
+}
+.main-menu ul ul ul ul{
+	background:#38ada9;
+	left:-100%;
+	top:0;
+	position:absolute;
+}
+/*responsive*/
+@media all and (max-width: 922px){
+.main-menu ul li a{
+	font-size:15px;
+	padding: 10px 10px;
+	
+}
+.main-menu ul ul{
+	width:200px;
+	
+}
+@media all and (max-width: 600px){
+	.main-menu ul li a{
+	font-size:15px;
+	
+}
+.main-menu ul li{
+	float:none;
+}
+.main-menu ul ul{
+	width:100%;
+	display:block;
+	position:inherit;
+	left:0;
+}
+	
+.main-menu ul ul ul{
+	width:100%;
+	display:block;
+	position:inherit;
+	left:0;
+}
+.main-menu ul ul ul ul{
+	width:100%;
+	display:block;
+	position:inherit;
+	left:0;
+}
+.main-menu ul ul li a:before{
+	content:'-';
+	margin-left:10px;
+}
+.main-menu ul ul ul li a:before{
+	content:'#';
+	margin-left:10px;
+}
+.main-menu ul ul ul li a:before{
+	content:'*';
+	margin-left:10px;
+}
+	
+}	
